@@ -1,0 +1,19 @@
+<script>
+function add(x, y) {
+	console.log("add");
+  return x + y
+}
+
+function sub() {debugger
+	console.log("sub");
+  return "sub";
+}
+
+function higherOrderFunction(x, sub) {debugger
+	console.log("higherOrderFunction");
+  return sub();
+}
+
+var res  = higherOrderFunction(10, sub)
+console.log("Respopnse::",res);
+</script>
